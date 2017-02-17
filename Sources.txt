@@ -1,0 +1,5 @@
+Tutorial for test app: https://www.youtube.com/watch?v=F-k5gwz_91o
+Install
+Update android
+SDK manager -> Get enough versions
+README: https://dbader.org/blog/write-a-great-readme-for-your-github-project
