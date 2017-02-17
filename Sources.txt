@@ -3,3 +3,4 @@ Install
 Update android
 SDK manager -> Get enough versions
 README: https://dbader.org/blog/write-a-great-readme-for-your-github-project
+Update DB: http://stackoverflow.com/questions/36629770/update-android-database-from-csv-file
