@@ -19,11 +19,19 @@
         android:layout_marginTop="40dp" />
 
     <Button
-        android:text="Magic"
+        android:text="DownloadManager"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/magicButton"
-        android:layout_centerVertical="true"
+        android:id="@+id/btnDM"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:onClick="onMagicClick"/>
+        android:layout_marginBottom="109dp" />
+
+    <Button
+        android:text="Traditional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnTrad"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

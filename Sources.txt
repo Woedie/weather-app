@@ -4,3 +4,7 @@ Update android
 SDK manager -> Get enough versions
 README: https://dbader.org/blog/write-a-great-readme-for-your-github-project
 Update DB: http://stackoverflow.com/questions/36629770/update-android-database-from-csv-file
+*download file (DIDNT WORK): http://www.helloandroid.com/tutorials/how-download-fileimage-url-your-device
+*ByteArrayBuffer deprecated: http://stackoverflow.com/questions/32138739/bytearraybuffer-missing-in-sdk23
+download file: https://www.youtube.com/watch?v=pGlqHeB5hdk
+*directory (DIDNT USE): https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#dataDir
