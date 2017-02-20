@@ -8,3 +8,9 @@ Update DB: http://stackoverflow.com/questions/36629770/update-android-database-f
 *ByteArrayBuffer deprecated: http://stackoverflow.com/questions/32138739/bytearraybuffer-missing-in-sdk23
 download file: https://www.youtube.com/watch?v=pGlqHeB5hdk
 *directory (DIDNT USE): https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#dataDir
+Scheduler: https://developer.android.com/reference/java/util/concurrent/ScheduledExecutorService.html
+CSV to listView: https://www.youtube.com/watch?v=S8_HnA7aLd0&t=688s
+
+use csv directly: http://stackoverflow.com/questions/5360628/get-and-parse-csv-file-in-android
+
+PROBLEM: File needs to download before it can be processed. Use BroadcastReceiver!!!!

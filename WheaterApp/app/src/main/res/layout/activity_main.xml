@@ -10,28 +10,20 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.vives.milan.wheaterapp.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Click button to download csv."
-        android:layout_alignParentTop="true"
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btnDM"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp" />
+        android:layout_marginTop="60dp"
+        android:id="@+id/theList" />
 
     <Button
         android:text="DownloadManager"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnDM"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="109dp" />
-
-    <Button
-        android:text="Traditional"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnTrad"
-        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
