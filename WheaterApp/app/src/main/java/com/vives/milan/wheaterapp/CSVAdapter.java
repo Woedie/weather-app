@@ -48,14 +48,20 @@ public class CSVAdapter extends ArrayAdapter<Weather>{
             InputStream in = new FileInputStream(file);
             BufferedReader reader = new BufferedReader(new InputStreamReader(in));
             String line;
+            int iteration = 0;
 
             while ((line = reader.readLine()) != null) {
+
+                if(!(iteration == 4)) {
+                    iteration++;
+                    continue;
+                }
 
                 String[] RowData = line.split(",");
 
                 Weather cur = new Weather();
                 cur.setDateHour(RowData[0]);
-                cur.setTemperature(Integer.parseInt(RowData[1]));
+                cur.setTemperature(RowData[1]);
 
                 this.add(cur);
             }

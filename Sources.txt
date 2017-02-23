@@ -14,3 +14,5 @@ CSV to listView: https://www.youtube.com/watch?v=S8_HnA7aLd0&t=688s
 use csv directly: http://stackoverflow.com/questions/5360628/get-and-parse-csv-file-in-android
 
 PROBLEM: File needs to download before it can be processed. Use BroadcastReceiver!!!!
+
+skip 1st lines: http://stackoverflow.com/questions/18306270/skip-first-line-while-reading-csv-file-in-java

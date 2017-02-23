@@ -1,8 +1,10 @@
 package com.vives.milan.wheaterapp;
 
 import android.app.DownloadManager;
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.pm.ApplicationInfo;
 import android.net.Uri;
 import android.nfc.Tag;
@@ -72,13 +74,10 @@ public class MainActivity extends AppCompatActivity {
 //                        MimeTypeMap.getFileExtensionFromUrl(weatherURL));
 
                 String nameOfFile = "data.csv";
-
                 String location = getExternalFilesDir(null) + "/csv/";
+                final File file = new File(location + nameOfFile);
 
                 Log.d(TAG, "file location: " + location);
-
-                File file = new File(location + nameOfFile);
-
                 Log.d(TAG, file.getName());
                 Log.d(TAG, "" + file.exists());
 
@@ -92,12 +91,22 @@ public class MainActivity extends AppCompatActivity {
                 DownloadManager manager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
                 manager.enqueue(request);
 
-                Log.d(TAG, "file downloaded.");
-                Log.d(TAG, "After download:" + file.exists());
+                BroadcastReceiver onComplete = new BroadcastReceiver() {
+                    @Override
+                    public void onReceive(Context context, Intent intent) {
+                        Log.d(TAG, "file downloaded.");
+                        Log.d(TAG, "After download:" + file.exists());
 
-                mAdapter = new CSVAdapter(MainActivity.this, -1);
+                        mAdapter = new CSVAdapter(MainActivity.this, -1);
 
-                mList.setAdapter(mAdapter);
+                        mList.setAdapter(mAdapter);
+
+                        unregisterReceiver(this);
+                    }
+                };
+
+                registerReceiver(onComplete, new IntentFilter(
+                        DownloadManager.ACTION_DOWNLOAD_COMPLETE));
 
             }
         });
