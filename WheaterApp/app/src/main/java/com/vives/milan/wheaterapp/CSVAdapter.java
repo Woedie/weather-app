@@ -61,7 +61,7 @@ public class CSVAdapter extends ArrayAdapter<Weather>{
 
                 Weather cur = new Weather();
                 cur.setDateHour(RowData[0]);
-                cur.setTemperature(RowData[1]);
+                cur.setTemperature(Float.parseFloat(RowData[1]));
 
                 this.add(cur);
             }

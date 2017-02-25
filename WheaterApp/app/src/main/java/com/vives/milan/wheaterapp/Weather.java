@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
 public class Weather {
 
     private String dateHour;
-    private String temperature;
+    private float temperature;
     private int windSpeed;
     private String windDirection;
     private int gustSpeed;
@@ -36,11 +36,11 @@ public class Weather {
         this.dateHour = dateHour;
     }
 
-    public String getTemperature() {
+    public float getTemperature() {
         return temperature;
     }
 
-    public void setTemperature(String temperature) {
+    public void setTemperature(float temperature) {
         this.temperature = temperature;
     }
 

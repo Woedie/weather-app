@@ -10,20 +10,12 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.vives.milan.wheaterapp.MainActivity">
 
-    <ListView
+    <com.jjoe64.graphview.GraphView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/btnDM"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp"
-        android:id="@+id/theList" />
-
-    <Button
-        android:text="DownloadManager"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnDM"
+        android:layout_height="500dip"
+        android:id="@+id/graph"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

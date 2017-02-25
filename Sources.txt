@@ -16,3 +16,7 @@ use csv directly: http://stackoverflow.com/questions/5360628/get-and-parse-csv-f
 PROBLEM: File needs to download before it can be processed. Use BroadcastReceiver!!!!
 
 skip 1st lines: http://stackoverflow.com/questions/18306270/skip-first-line-while-reading-csv-file-in-java
+
+Graph: http://www.android-graphview.org/
+
+CSVreader: http://opencsv.sourceforge.net/
