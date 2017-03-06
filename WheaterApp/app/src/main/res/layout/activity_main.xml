@@ -10,12 +10,24 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.vives.milan.wheaterapp.MainActivity">
 
-    <com.jjoe64.graphview.GraphView
-        android:layout_width="match_parent"
-        android:layout_height="500dip"
-        android:id="@+id/graph"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+    <Button
+        android:text="ListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/graphBtn"
+        android:layout_alignRight="@+id/graphBtn"
+        android:layout_alignEnd="@+id/graphBtn"
+        android:layout_marginTop="81dp"
+        android:id="@+id/listViewBtn"
+        android:onClick="onListViewClick"/>
 
+    <Button
+        android:text="Graph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:id="@+id/graphBtn"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onGraphClick" />
 </RelativeLayout>

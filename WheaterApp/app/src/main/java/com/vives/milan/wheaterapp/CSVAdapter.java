@@ -1,19 +1,13 @@
 package com.vives.milan.wheaterapp;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
-
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
+import com.opencsv.CSVReader;
+import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.StreamCorruptedException;
 
 /**
  * Created by milan on 20-Feb-17.
@@ -37,6 +31,24 @@ public class CSVAdapter extends ArrayAdapter<Weather>{
     private void loadArrayFromFile(){
 
         try {
+
+            CSVReader reader = new CSVReader(new FileReader(ctx.getExternalFilesDir(null)+"/csv/data.csv"));
+            String[] line;
+            int iteration = 0;
+            while((line=reader.readNext())!=null) {
+                if (!(iteration == 4)) {
+                    iteration++;
+                    continue;
+                }
+                System.out.println("Weather: Date= " + line[0] + ", Temp= " + line[1]);
+                Weather cur = new Weather();
+                cur.setDateHour(line[0]);
+                cur.setTemperature(Float.parseFloat(line[1]));
+                this.add(cur);
+            }
+
+            /* A way of reading the file without using opencsv. BUT it counts the "" with it caused problems with the floats.
+
 
             String nameOfFile = "data.csv";
             String location = ctx.getExternalFilesDir(null) + "/csv/";
@@ -66,7 +78,7 @@ public class CSVAdapter extends ArrayAdapter<Weather>{
                 this.add(cur);
             }
 
-            in.close();
+            in.close();*/
 
         }
         catch (IOException e){

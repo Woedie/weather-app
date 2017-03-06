@@ -1,8 +1,5 @@
 package com.vives.milan.wheaterapp;
 
-import java.util.Date;
-import java.util.StringTokenizer;
-
 /**
  * Created by milan on 20-Feb-17.
  */
