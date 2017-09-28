@@ -14,10 +14,84 @@ CSV to listView: https://www.youtube.com/watch?v=S8_HnA7aLd0&t=688s
 
 use csv directly: http://stackoverflow.com/questions/5360628/get-and-parse-csv-file-in-android
 
-PROBLEM: File needs to download before it can be processed. Use BroadcastReceiver!!!!
+PROBLEM: File needs to download before it can be processed. Use BroadcastReceiver!!!! : http://stackoverflow.com/questions/21477493/android-download-manager-completed
 
 skip 1st lines: http://stackoverflow.com/questions/18306270/skip-first-line-while-reading-csv-file-in-java
 
 Graph: http://www.android-graphview.org/
 
 CSVreader: http://opencsv.sourceforge.net/
+
+Date&Time: http://www.joda.org/joda-time/index.html
+
+import library: http://stackoverflow.com/questions/18735923/importing-jar-libraries-into-android-studio
+
+remove titlebar: http://stackoverflow.com/questions/26492522/how-do-i-remove-the-title-bar-in-android-studio
+
+colorscheme: https://coolors.co/ffffff-ffd632-86b9e0-bacedd-7799af
+
+use colors: http://stackoverflow.com/questions/7378636/setting-background-colour-of-android-layout-element
+
+check if connection: http://stackoverflow.com/questions/5474089/how-to-check-currently-internet-connection-is-available-or-not-in-android (DEPRECATED)
+		http://stackoverflow.com/questions/32547006/connectivitymanager-getnetworkinfoint-deprecated
+
+First I downloaded the files to .../files/savedData, but later changed it to ../files directly. Easier to access
+
+xmlParsing: https://www.youtube.com/watch?v=40mYDQkK44A
+		http://www.codevoila.com/post/64/xml-processing-in-android-and-java-xmlpull-example
+
+solving the attribute problem: http://stackoverflow.com/questions/23263086/xmlpullparser-get-data-from-tag-with-specific-attributevalue
+				http://stackoverflow.com/questions/24171622/xmlpullparser-how-to-get-multiple-values-from-one-tag-android
+				https://www.tutorialspoint.com/android/android_xml_parsers.htm
+				https://www.youtube.com/watch?v=eGzDCI4avuU
+
+Dumb fuck: tag was "prob-precipitation", instead of "prob_precipitation"
+
+DOWNLOADMANAGER: 
+	1st: android downloadmanager, no problems until i needed more than 1 file. Cannot get correct onreceive for which one is done and which one isn't
+	2nd: https://github.com/smanikandan14/ThinDownloadManager/blob/master/ThinDownloadManagerTestApp/src/main/java/com/mani/thindownloadmanager/app/MainActivity.java
+		Problem with the csv: Failed: ErrorCode 1006, Transfer-Encoding not found as well as can't know size of download, giving up
+	3rd: https://github.com/lingochamp/FileDownloader/tree/master/demo/src/main/java/com/liulishuo/filedownloader/demo
+
+generate UML: http://stackoverflow.com/questions/17123384/how-to-generate-class-diagram-uml-on-android-studio
+
+code into Word: http://stackoverflow.com/questions/387453/how-do-you-display-code-snippets-in-ms-word-preserving-format-and-syntax-highlig
+
+fastest switch case or if: http://stackoverflow.com/questions/6665997/switch-statement-for-greater-than-less-than
+
+fullscreen backgrounds depending on screensize: http://stackoverflow.com/questions/16135984/full-screen-background-image-in-an-activity
+						https://developer.android.com/topic/performance/graphics/index.html
+
+set RelativeLayout background with bitmap: http://stackoverflow.com/questions/7466900/how-to-use-relativelayout-setbackgrounddrawable-with-a-bitmap
+
+multiple cases, same code: http://stackoverflow.com/questions/16706716/using-two-values-for-one-switch-case-statement
+
+current date/time: http://stackoverflow.com/questions/5369682/get-current-time-and-date-on-android
+		https://developer.android.com/reference/java/util/Calendar.html#HOUR_OF_DAY
+		http://stackoverflow.com/questions/5175728/how-to-get-the-current-date-time-in-java <--- format
+		http://stackoverflow.com/questions/1005523/how-to-add-one-day-to-a-date
+
+ViewPager + fragments: http://stackoverflow.com/questions/18413309/how-to-implement-a-viewpager-with-different-fragments-layouts
+			https://examples.javacodegeeks.com/android/core/view/viewpager/android-viewpager-example/
+			http://www.journaldev.com/10096/android-viewpager-example-tutorial
+			https://developer.android.com/training/animation/screen-slide.html
+
+Screenwidth+ height in fragments: http://stackoverflow.com/questions/11629675/get-screen-width-and-height-in-a-fragment
+
+fragment arguments: http://stackoverflow.com/questions/9245408/best-practice-for-instantiating-a-new-android-fragment
+
+fragment imageview: http://stackoverflow.com/questions/42859402/imageview-in-fragment-not-showing
+
+pollen: http://www.datosabiertos.jcyl.es/web/jcyl/set/es/mediciones/niveles_de_polen/1284208096554
+
+radioPopUp: http://stackoverflow.com/questions/32520850/create-a-custom-dialog-with-radio-buttons-list
+		http://www.tutorialsbird.com/android-popupwindow-custom-layout/
+		http://stackoverflow.com/questions/11754309/android-popupwindow-from-a-fragment
+		http://stackoverflow.com/questions/18461990/pop-up-window-to-display-some-stuff-in-a-fragment
+
+Popup Background: http://stackoverflow.com/questions/16161448/how-to-make-layout-with-rounded-corners
+
+SharedPref: https://developer.android.com/training/basics/data-storage/shared-preferences.html#ReadSharedPreference
+		http://stackoverflow.com/questions/23024831/android-shared-preferences-example
+		
+reset viewpager: http://stackoverflow.com/questions/7263291/viewpager-pageradapter-not-updating-the-view/8024557#8024557

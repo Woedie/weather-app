@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="title_activity_settings">Ajustes</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Habilitar recomendaciones sociales</string>
+    <string name="pref_description_social_recommendations">Recomendaciones para que las personas contacten
+         Basado en el historial de mensajes
+    </string>
+
+    <string name="pref_title_display_name">Nombre para mostrar</string>
+    <string name="pref_default_display_name">Milan Lamote</string>
+
+    <string name="pref_title_add_friends_to_messages">Añadir amigos a los mensajes</string>
+    <string-array name="pref_example_list_titles">
+        <item>Siempre</item>
+        <item>Cuando sea posible</item>
+        <item>Nunca</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+
+    <!-- Pollen Strings -->
+    <string name="overallText">Estado general del polen</string>
+    <string name="detailedPollen">Predicciones detalladas del polen</string>
+    <string name="imageLegend">Imagen</string>
+    <string name="textLegend">Nombre</string>
+    <string name="statusLegend">Estado</string>
+    <string name="acerText">Acer \n Arce</string>
+    <string name="aesculusText">Aesculus \n Castaño de Indias</string>
+    <string name="alnusText">Alnus \n Alisos</string>
+    <string name="apiaceaeText">Apiaceae \n Apio</string>
+    <string name="asteraceaeText">Asteraceae \n Margarita</string>
+    <string name="betulaText">Betula \n Abedul</string>
+    <string name="brassicaceaeText">Brassicaceae \n Colza</string>
+    <string name="chenopodiaceaeText">Chenopodiaceae \n Cenizo</string>
+    <string name="cupressaceaeText">Cupressaceae \n Ciprés</string>
+    <string name="cyperaceaeText">Cyperaceae \n Ciperáceas</string>
+    <string name="echiumText">Echium \n Viborera</string>
+    <string name="ericaceaeText">Ericaceae \n Brezo</string>
+    <string name="fabaceaeText">Fabaceae \n Guisantes</string>
+    <string name="fagusText">Fagus \n Haya</string>
+    <string name="fraxinusText">Fraxinus \n Fresno</string>
+    <string name="galiumText">Galium \n Amor de Hortelano</string>
+    <string name="juglansText">Juglans \n Nogal</string>
+    <string name="juncaceaeText">Juncaceae \n Junco</string>
+    <string name="mercurialisText">Mercurialis \n Mercurial</string>
+    <string name="morusText">Morus \n Moral</string>
+    <string name="myrtaceaeText">Myrtaceae \n Eucalipto</string>
+    <string name="oleaText">Olea \n Olivo</string>
+    <string name="pinusText">Pinus \n Pino</string>
+    <string name="plantagoText">Plantago \n Llanten</string>
+    <string name="platanusText">Platanus \n Platano de Sombra</string>
+    <string name="poaceaeText">Poaceae \n Césped</string>
+    <string name="populusText">Populus \n Álamo</string>
+    <string name="quercusText">Quercus \n Encina</string>
+    <string name="rosaceaeText">Rosaceae \n Rosa</string>
+    <string name="rumexText">Rumex \n Acedera</string>
+    <string name="salixText">Salix \n Sauce</string>
+    <string name="sambucusText">Sambucus \n Sauco</string>
+    <string name="taraxumText">Taraxacum \n Diente de León</string>
+    <string name="tiliaText">Tilia \n Tilo</string>
+    <string name="ulmusText">Ulmus \n Olmo</string>
+    <string name="urticaceaeText">Urticaceae \n Ortiga</string>
+
+    <!-- Graph strings -->
+    <string name="tempGraph">Temperatura</string>
+    <string name="rainGraph">Humedad/Precipitación</string>
+    <string name="airGraph">Presión atmosférica</string>
+    <string name="tempLegend">Temperatura (°C)</string>
+    <string name="rainLegend">Lluvia (mm)</string>
+    <string name="humidLegend">Humedad (%)</string>
+    <string name="airLegend">Presión atmosférica (hPa)</string>
+    <string name="graphExplanation">Estos gráficos representan los datos de las últimas 24 horas</string>
+
+    <!-- Source strings -->
+    <string name="aemetSource">Fuente: aemet.es; Última actualización:</string>
+    <string name="pollenSource">Fuente: datosabiertos.jcyl.es; Última actualización:</string>
+
+    <!-- Predictions string -->
+    <string name="predictions">Predicciones</string>
+
+</resources>
