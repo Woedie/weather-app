@@ -32,8 +32,8 @@ public class csvParser {
             if (line[1].equals("")) {
                 line = reader.readNext();
             }
-            cur.setTemperature(Float.parseFloat(line[1])); //the first value in the string array determines the temperature
-            cur.setPrecipitation(Float.parseFloat(line[6]));
+            cur.setTemperature(getValue(line[1])); //the first value in the string array determines the temperature
+            cur.setPrecipitation(getValue(line[6]));
             cur.setWindSpeedCsv(Integer.parseInt(line[2]));
             cur.setWindDirectionCsv(line[3]);
         } catch (FileNotFoundException e) {
@@ -56,9 +56,13 @@ public class csvParser {
                 String [] dateHour = line[0].split(" ");
                 String [] hourMinute = dateHour[1].split(":");
                 cur.setHour(Integer.parseInt(hourMinute[0]));
-                cur.setTemperature(Float.parseFloat(line[1]));
-                cur.setPrecipitation(Float.parseFloat(line[6]));
-                cur.setAirPressure(Float.parseFloat(line[7]));
+//                cur.setTemperature(Float.parseFloat(line[1]));
+//                cur.setPrecipitation(Float.parseFloat(line[6]));
+//                cur.setAirPressure(Float.parseFloat(line[7]));
+//                cur.setHumidity(Integer.parseInt(line[9]));
+                cur.setTemperature(getValue(line[1]));
+                cur.setPrecipitation(getValue(line[6]));
+                cur.setAirPressure(getValue(line[7]));
                 cur.setHumidity(Integer.parseInt(line[9]));
                 historyList.add(cur); //when we've finished reading one line which equals one hour, we add this information to the list and the loop starts again
             }
@@ -68,6 +72,22 @@ public class csvParser {
             e.printStackTrace();
         }
         return historyList; //after the file is fully read, we return the list of Weather objects
+    }
+    static float getValue(String value){
+
+        float v = 0;
+
+        if (value == ""){
+
+            v = 0.0f; //choose an error code
+
+        }else{
+
+            v = Float.parseFloat(value);
+        }
+
+        return v;
+
     }
 
 }
